@@ -257,7 +257,7 @@
                 </tr>
               </thead>
               <tbody id="table-pengurus" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
+                
               </tbody>
             </table>
           </div>
@@ -275,7 +275,7 @@
                 </tr>
               </thead>
               <tbody id="table-koordinator" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
+                
               </tbody>
             </table>
           </div>
@@ -293,7 +293,7 @@
                 </tr>
               </thead>
               <tbody id="table-smp" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
+                
               </tbody>
             </table>
           </div>
@@ -311,7 +311,6 @@
                 </tr>
               </thead>
               <tbody id="table-sd" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
               </tbody>
             </table>
           </div>
@@ -329,7 +328,6 @@
                 </tr>
               </thead>
               <tbody id="table-tk" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
               </tbody>
             </table>
           </div>
@@ -347,8 +345,7 @@
                 </tr>
               </thead>
               <tbody id="table-tpq" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
-              </tbody>
+s              </tbody>
             </table>
           </div>
         </div>
@@ -523,7 +520,6 @@
     </script>
 
 <script>
-  // Sample JSON data
   const dataPengurus = [
     { "name": "H.Subchan Arwan", "role": "Ketua Umum" },
     { "name": "Khoiron Sahur Roni", "role": "Ketua" },
@@ -537,31 +533,24 @@
     { "name": "H.M.Zainuddin, SH", "role": "Bendahara" }
   ];
 
-  // Get the table body element
   const tablePengurus = document.getElementById("table-pengurus");
 
-  // Loop through the data array and create table rows
   dataPengurus.forEach((item, index) => {
-    // Create a new row element
     const row = document.createElement("tr");
 
-    // Create and append the 'No' cell
     const noCell = document.createElement("th");
     noCell.setAttribute("scope", "row");
     noCell.textContent = index + 1;
     row.appendChild(noCell);
 
-    // Create and append the 'Nama' cell
     const nameCell = document.createElement("td");
     nameCell.textContent = item.name;
     row.appendChild(nameCell);
 
-    // Create and append the 'Jabatan' cell
     const roleCell = document.createElement("td");
     roleCell.textContent = item.role;
     row.appendChild(roleCell);
 
-    // Append the row to the table body
     tablePengurus.appendChild(row);
   });
 </script>
@@ -575,35 +564,30 @@
     { no: 3, nama: "Shodiqin Janawi", jabatan: "Koordinator Bidang Sosial" },
     { no: 4, nama: "H.Ghufron Yaden", jabatan: "Koordinator Bidang Ekonomi" }
   ];
-  // Data for Seksi Bidang SMP
   const smpData = [
     { no: 1, nama: "H.Niti Sumito", jabatan: "Seksi SMP" },
     { no: 2, nama: "H.Abdul Ghofur", jabatan: "Seksi SMP" },
     { no: 3, nama: "Abdul Basir", jabatan: "Seksi SMP" }
   ];
 
-  // Data for Seksi Bidang SD dan MII
   const sdMiiData = [
     { no: 1, nama: "Hj.Nur Izzati Imrodin", jabatan: "Seksi SD & MII" },
     { no: 2, nama: "Hj.Nur Fadhilah Zaenuddin", jabatan: "Seksi SD & MII" },
     { no: 3, nama: "Ghorizah Abdul Basir", jabatan: "Seksi SD & MII" }
   ];
 
-  // Data for Seksi Bidang TK dan RA
   const tkRaData = [
     { no: 1, nama: "Dra.Hj.Nailis Soraya", jabatan: "Seksi TK & RA" },
     { no: 2, nama: "Chumaisiyah", jabatan: "Seksi TK & RA" },
     { no: 3, nama: "Hj.Anisah", jabatan: "Seksi TK & RA" }
   ];
 
-  // Data for Seksi Bidang TPQ dan PONPES
   const tpqPonpesData = [
     { no: 1, nama: "H.M.Bakhir", jabatan: "Seksi TPQ & PONPES" },
     { no: 2, nama: "Fatkhurrohman.HT", jabatan: "Seksi TPQ & PONPES" },
     { no: 3, nama: "Khoirul Riza", jabatan: "Seksi TPQ & PONPES" }
   ];
 
-  // Function to populate each table dynamically
   const populateTable = (tableId, data) => {
     const tableBody = document.getElementById(tableId);
     data.forEach(item => {
@@ -625,7 +609,6 @@
     });
   };
 
-  // Call populateTable for each section
   populateTable('table-koordinator', koordinatorData);
   populateTable('table-smp', smpData);
   populateTable('table-sd', sdMiiData);
