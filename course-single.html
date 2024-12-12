@@ -48,30 +48,46 @@
         <div class="site-mobile-menu-body"></div>
       </div>
 
+      <!-- Small Nav Info -->
       <div class="py-2 bg-light">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-lg-9 d-none d-lg-block">
-              <a href="#" class="small mr-3"
-                ><span class="icon-question-circle-o mr-2"></span> Have a
-                questions?</a
+            <div class="col-lg-12 d-block">
+              <a
+                href="https://wa.link/1e017m"
+                target="_blank"
+                class="small mr-3"
               >
-              <a href="#" class="small mr-3"
-                ><span class="icon-phone2 mr-2"></span> 10 20 123 456</a
+                <span class="icon-whatsapp mr-2"></span>
+                Hubungi WhatsApp
+              </a>
+              <a href="#" class="small mr-3">
+                <span class="icon-phone2 mr-2"></span>
+                (0285) 421213
+              </a>
+              <br class="d-block d-md-none" />
+              <a
+                href="https://maps.app.goo.gl/7puS21EbSmcTiY1j6"
+                target="_blank"
+                class="small mr-3"
               >
-              <a href="#" class="small mr-3"
-                ><span class="icon-envelope-o mr-2"></span> info@mydomain.com</a
-              >
+                <span class="icon-map mr-2"></span>
+                Simbang Wetan Gg. 1, Kecamatan Buaran, Kabupaten Pekalongan
+                51171
+              </a>
             </div>
-            <div class="col-lg-3 text-right">
-              <a href="login.html" class="small mr-3"
-                ><span class="icon-unlock-alt"></span> Log In</a
-              >
+            <div class="col-lg-3 text-right d-none">
+              <a href="login.html" class="small mr-3">
+                <span class="icon-unlock-alt"></span>
+                Log In
+              </a>
               <a
                 href="register.html"
                 class="small btn btn-primary px-4 py-2 rounded-0"
-                ><span class="icon-users"></span> Register</a
               >
+                <span class="icon-users"></span>
+                Register
+              </a>
             </div>
           </div>
         </div>
@@ -149,20 +165,6 @@
         </div>
       </header>
 
-      <div
-        class="site-section ftco-subscribe-1 site-blocks-cover pb-4"
-        style="background-image: url('images/bg_1.jpg')"
-      >
-        <div class="container">
-          <div class="row align-items-end">
-            <div class="col-lg-7">
-              <h2 class="mb-0">How To Create Mobile Apps Using Ionic</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <div class="custom-breadcrumns border-bottom">
         <div class="container">
           <a href="index.html">Home</a>
@@ -223,8 +225,8 @@
             </div>
           </div>
 
-          <div class="row">
-            <h4 class="section-title-underline mb-2">
+          <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
               <span>Pengawas</span>
             </h2>
             <table class="table table-bordered">
@@ -242,8 +244,8 @@
             </table>
           </div>
 
-           <div class="row">
-            <h4 class="section-title-underline mb-2">
+           <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
               <span>Pengurus Harian</span>
             </h2>
             <table class="table table-bordered">
@@ -255,14 +257,13 @@
                 </tr>
               </thead>
               <tbody id="table-pengurus" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
+                
               </tbody>
             </table>
           </div>
 
-          <!-- CONTINUE THE CODES HERE -->
-          <div class="row">
-            <h4 class="section-title-underline mb-2">
+          <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
               <span>Koordinator Bidang</span>
             </h2>
             <table class="table table-bordered">
@@ -274,8 +275,76 @@
                 </tr>
               </thead>
               <tbody id="table-koordinator" class="table-group-divider">
-                <!-- Rows will be dynamically inserted here -->
+                
               </tbody>
+            </table>
+          </div>
+
+          <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
+              <span>Seksi Bidang SMP</span>
+            </h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Jabatan</th>
+                </tr>
+              </thead>
+              <tbody id="table-smp" class="table-group-divider">
+                
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
+              <span>Seksi Bidang SD dan MII</span>
+            </h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Jabatan</th>
+                </tr>
+              </thead>
+              <tbody id="table-sd" class="table-group-divider">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
+              <span>Seksi Bidang TK dan RA</span>
+            </h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Jabatan</th>
+                </tr>
+              </thead>
+              <tbody id="table-tk" class="table-group-divider">
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row mb-4">
+            <h4 class="section-title-underline mb-4">
+              <span>Seksi TPQ dan Ponpes</span>
+            </h2>
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">No</th>
+                  <th scope="col">Nama</th>
+                  <th scope="col">Jabatan</th>
+                </tr>
+              </thead>
+              <tbody id="table-tpq" class="table-group-divider">              </tbody>
             </table>
           </div>
         </div>
@@ -450,7 +519,6 @@
     </script>
 
 <script>
-  // Sample JSON data
   const dataPengurus = [
     { "name": "H.Subchan Arwan", "role": "Ketua Umum" },
     { "name": "Khoiron Sahur Roni", "role": "Ketua" },
@@ -464,34 +532,90 @@
     { "name": "H.M.Zainuddin, SH", "role": "Bendahara" }
   ];
 
-  // Get the table body element
   const tablePengurus = document.getElementById("table-pengurus");
 
-  // Loop through the data array and create table rows
   dataPengurus.forEach((item, index) => {
-    // Create a new row element
     const row = document.createElement("tr");
 
-    // Create and append the 'No' cell
     const noCell = document.createElement("th");
     noCell.setAttribute("scope", "row");
     noCell.textContent = index + 1;
     row.appendChild(noCell);
 
-    // Create and append the 'Nama' cell
     const nameCell = document.createElement("td");
     nameCell.textContent = item.name;
     row.appendChild(nameCell);
 
-    // Create and append the 'Jabatan' cell
     const roleCell = document.createElement("td");
     roleCell.textContent = item.role;
     row.appendChild(roleCell);
 
-    // Append the row to the table body
     tablePengurus.appendChild(row);
   });
 </script>
+
+
+
+<script>
+   const koordinatorData = [
+    { no: 1, nama: "Drs.H.A.Rokib", jabatan: "Koordinator Bidang Pendidikan" },
+    { no: 2, nama: "H.Anas Sodiqun", jabatan: "Koordinator Bidang Keagamaan" },
+    { no: 3, nama: "Shodiqin Janawi", jabatan: "Koordinator Bidang Sosial" },
+    { no: 4, nama: "H.Ghufron Yaden", jabatan: "Koordinator Bidang Ekonomi" }
+  ];
+  const smpData = [
+    { no: 1, nama: "H.Niti Sumito", jabatan: "Seksi SMP" },
+    { no: 2, nama: "H.Abdul Ghofur", jabatan: "Seksi SMP" },
+    { no: 3, nama: "Abdul Basir", jabatan: "Seksi SMP" }
+  ];
+
+  const sdMiiData = [
+    { no: 1, nama: "Hj.Nur Izzati Imrodin", jabatan: "Seksi SD & MII" },
+    { no: 2, nama: "Hj.Nur Fadhilah Zaenuddin", jabatan: "Seksi SD & MII" },
+    { no: 3, nama: "Ghorizah Abdul Basir", jabatan: "Seksi SD & MII" }
+  ];
+
+  const tkRaData = [
+    { no: 1, nama: "Dra.Hj.Nailis Soraya", jabatan: "Seksi TK & RA" },
+    { no: 2, nama: "Chumaisiyah", jabatan: "Seksi TK & RA" },
+    { no: 3, nama: "Hj.Anisah", jabatan: "Seksi TK & RA" }
+  ];
+
+  const tpqPonpesData = [
+    { no: 1, nama: "H.M.Bakhir", jabatan: "Seksi TPQ & PONPES" },
+    { no: 2, nama: "Fatkhurrohman.HT", jabatan: "Seksi TPQ & PONPES" },
+    { no: 3, nama: "Khoirul Riza", jabatan: "Seksi TPQ & PONPES" }
+  ];
+
+  const populateTable = (tableId, data) => {
+    const tableBody = document.getElementById(tableId);
+    data.forEach(item => {
+      const row = document.createElement('tr');
+
+      const noCell = document.createElement('td');
+      noCell.textContent = item.no;
+      row.appendChild(noCell);
+
+      const namaCell = document.createElement('td');
+      namaCell.textContent = item.nama;
+      row.appendChild(namaCell);
+
+      const jabatanCell = document.createElement('td');
+      jabatanCell.textContent = item.jabatan;
+      row.appendChild(jabatanCell);
+
+      tableBody.appendChild(row);
+    });
+  };
+
+  populateTable('table-koordinator', koordinatorData);
+  populateTable('table-smp', smpData);
+  populateTable('table-sd', sdMiiData);
+  populateTable('table-tk', tkRaData);
+  populateTable('table-tpq', tpqPonpesData);
+
+</script>
+
 
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
