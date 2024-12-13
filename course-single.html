@@ -482,38 +482,30 @@
     </div>
 
     <script>
-      // Sample JSON data
       const data = [
         { "name": "Drs.H.Imrodin", "role": "Ketua" },
         { "name": "H.Bastomi", "role": "Anggota" },
         { "name": "H.Ahmad Muchith", "role": "Anggota" }
       ];
 
-      // Get the table body element
       const tableBody = document.getElementById("table-pengawas");
 
-      // Loop through the data array and create table rows
       data.forEach((item, index) => {
-        // Create a new row element
         const row = document.createElement("tr");
 
-        // Create and append the 'No' cell
         const noCell = document.createElement("th");
         noCell.setAttribute("scope", "row");
         noCell.textContent = index + 1;
         row.appendChild(noCell);
 
-        // Create and append the 'Nama' cell
         const nameCell = document.createElement("td");
         nameCell.textContent = item.name;
         row.appendChild(nameCell);
 
-        // Create and append the 'Jabatan' cell
         const roleCell = document.createElement("td");
         roleCell.textContent = item.role;
         row.appendChild(roleCell);
 
-        // Append the row to the table body
         tableBody.appendChild(row);
       });
     </script>
