@@ -77,6 +77,19 @@ body {
   color: white;
 }
 
+.btn-small {
+  border: 1px solid #51be78;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 2px 14px;
+}
+
+.btn-small:hover {
+  border: 1px solid #019241;
+}
+
 a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
@@ -914,7 +927,7 @@ a:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 4rem 0;
+  padding: 3rem 0;
 }
 .section-bg.style-1 {
   position: relative;
@@ -940,7 +953,6 @@ a:hover {
 .section-bg.style-1 h3 {
   font-size: 20px;
   color: #019241;
-  margin-bottom: 30px;
 }
 .section-bg.style-1 p {
   color: #7697c6;
@@ -1372,9 +1384,15 @@ a:hover {
   position: relative;
   z-index: 2;
 }
+.ftco-subscribe-1 > .container h5,
 .ftco-subscribe-1 > .container h2,
 .ftco-subscribe-1 > .container p {
   color: #fff;
+}
+.ftco-subscribe-1 > .container .highlight-text {
+  background-color: #019241;
+  padding: 4px 8px;
+  width: fit-content;
 }
 .ftco-subscribe-1 .form-control {
   height: auto !important;
